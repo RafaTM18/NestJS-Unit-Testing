@@ -27,7 +27,7 @@ describe('PokemonService', () => {
         });
 
         it('deveria retornar erro quando o ID é maior que 151', async () => {
-            const getPokemon = pokemonService.getPokemon(152);
+            const getPokemon = pokemonService.getPokemon(150);
 
             await expect(getPokemon).rejects.toBeInstanceOf(BadRequestException);
         });

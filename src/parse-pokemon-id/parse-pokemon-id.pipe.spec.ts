@@ -31,5 +31,4 @@ describe('ParsePokemonIdPipe', () => {
     const value = () => pipe.transform('150');
     expect(value()).toBe(150);
   });
-
 });
